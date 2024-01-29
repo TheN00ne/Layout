@@ -1,0 +1,65 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    header{
+        color:white;
+        .top{   
+            padding:15px;
+        }
+        .space{
+            min-height:650px;
+            height:auto;
+            text-align:center;
+            background-image:url("https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg");
+
+            button{
+                width:220px;
+                height:60px;
+                background-color:white;
+                border:2px solid black;
+                border-radius:60px;
+                font-size:25px;
+                margin-top:20px;
+                cursor:pointer;
+                transition-duration:0.5s;
+                &:hover{
+                    transform:translate(0px, 6px);
+                    background-color:#292241;
+                    border-color:white;
+                    color:white;
+                }
+            }
+        }
+
+        .mainLogo{
+            margin-top:60px;
+        }
+
+        .mainHeader{
+            font-size:70px;
+        }
+
+        .enter{
+            font-size:20px;
+            font-style:italic;
+            padding-left:50px;
+            padding-right:50px;
+            word-wrap:break-word;
+        }
+
+        .themes{
+            margin-left:-40px;
+            li{
+                display:inline-block;
+                width:25px;
+                background-color:black;
+                border:1px solid white;
+                border-radius:10px;
+            }
+            a{
+                text-decoration:none;
+                color:violet;
+            }
+        }
+    }
+}
