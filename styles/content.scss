@@ -1,0 +1,93 @@
+@import "./mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+@mixin circle($bgCol, $w, $bw, $bdCol, $zI, $top, $left){
+    background-color:$bgCol;
+    width:$w;
+    height:$w;
+    border-radius:$w;
+    border:$bw solid $bdCol;
+    z-index:$zI;
+    position:relative;
+    top:$top;
+    left:$left;
+}
+
+article{
+    height:auto;
+    display:grid;
+}
+
+.art1_1{
+    grid-template-columns:50% 50%;
+    .blockLeft{
+        justify-self:center;
+        .circle1{
+            @include circle(transparent, 160px , 45px, blue, 1, 50px, 260px);
+        }
+        
+        .circle2{
+            @include circle(transparent, 500px , 0, blue, 2, -70px, 20px);
+            background-image:url("https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/703490a9dd6553cca7d1bd05/dfd.jpg");
+            background-size: cover;
+            background-position:-60px center;
+        }
+    
+        .circle3{
+            @include circle(transparent, 250px, 20px, blue, 3, -200px, 220px);
+            background-image:url("https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/0a1d99b183d85e8197b7ee2a/flat-lay-office-desk-assortment-with-empty-screen-tablet_23-2148707960.jpg?version=");
+            background-size: cover;
+            background-position:-60px center;
+        }
+    
+        .circle4{
+            @include circle(blue, 100px , 10px, blue, 1, -220px, 100px);
+        }
+    }
+    .blockRight{
+        margin-top:80px;
+        padding:60px;
+        span{
+            font-size:25px;
+            font-family:sans-serif;
+        }
+        h1{
+            @include h(50px, Raleway, black);
+            margin-top:10px;
+        }
+        p{
+            @include p(18px, normal, sans-serif, 0px, 0px, 30px);
+        }
+        button{
+            @include button(220px, 60px, 20px, 20px, blue, white);
+            text-transform:uppercase;
+            font-weight:bold;
+        }
+
+    }
+}
+
+
+.sec2{
+    
+}
+
+.sec3{
+    
+}
+
+.sec4{
+    
+}
+
+.sec5{
+    
+}
+
+.sec6{
+    
+}
+
+.sec7{
+
+}

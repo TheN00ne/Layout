@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -8,42 +9,84 @@ body header {
 body header .top {
   padding: 15px;
 }
+body header .top img {
+  cursor: pointer;
+}
+body header .top .menu {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  font-size: 25px;
+  margin-top: 5px;
+  border-width: 0px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  line-height: 27px;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+body header .top .menu:hover {
+  -webkit-transform: translate(0px, 6px);
+          transform: translate(0px, 6px);
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+}
 body header .space {
   min-height: 650px;
   height: auto;
   text-align: center;
-  background-image: url("https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg");
+  padding-bottom: 20px;
+  background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/533bb9280d125b309a000741/cvb.jpg?version=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body header .space h1 {
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 body header .space button {
   width: 220px;
   height: 60px;
   background-color: white;
-  border: 2px solid black;
-  border-radius: 60px;
+  border-radius: 55px;
+  color: #312e45;
   font-size: 25px;
   margin-top: 20px;
+  border-width: 0px;
   cursor: pointer;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  font-size: 30px;
 }
 body header .space button:hover {
   -webkit-transform: translate(0px, 6px);
           transform: translate(0px, 6px);
-  background-color: #292241;
-  border-color: white;
+  background-color: #312e45;
   color: white;
+  border: 3px solid white;
 }
 body header .mainLogo {
   margin-top: 60px;
 }
 body header .mainHeader {
   font-size: 70px;
+  font-family: Georgia;
+  color: white;
 }
 body header .enter {
   font-size: 20px;
   font-style: italic;
-  padding-left: 50px;
-  padding-right: 50px;
+  font-family: sans-serif;
+  padding-left: 170px;
+  padding-right: 170px;
+  line-height: 30px;
   word-wrap: break-word;
 }
 body header .themes {
@@ -59,4 +102,114 @@ body header .themes li {
 body header .themes a {
   text-decoration: none;
   color: violet;
+}
+
+article {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.art1_1 {
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+.art1_1 .blockLeft {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.art1_1 .blockLeft .circle1 {
+  background-color: transparent;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  border: 45px solid blue;
+  z-index: 1;
+  position: relative;
+  top: 50px;
+  left: 260px;
+}
+.art1_1 .blockLeft .circle2 {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+  border: 0 solid blue;
+  z-index: 2;
+  position: relative;
+  top: -70px;
+  left: 20px;
+  background-image: url("https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/703490a9dd6553cca7d1bd05/dfd.jpg");
+  background-size: cover;
+  background-position: -60px center;
+}
+.art1_1 .blockLeft .circle3 {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 20px solid blue;
+  z-index: 3;
+  position: relative;
+  top: -200px;
+  left: 220px;
+  background-image: url("https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/0a1d99b183d85e8197b7ee2a/flat-lay-office-desk-assortment-with-empty-screen-tablet_23-2148707960.jpg?version=");
+  background-size: cover;
+  background-position: -60px center;
+}
+.art1_1 .blockLeft .circle4 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 10px solid blue;
+  z-index: 1;
+  position: relative;
+  top: -220px;
+  left: 100px;
+}
+.art1_1 .blockRight {
+  margin-top: 80px;
+  padding: 60px;
+}
+.art1_1 .blockRight span {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+.art1_1 .blockRight h1 {
+  font-size: 50px;
+  font-family: Raleway;
+  color: black;
+  margin-top: 10px;
+}
+.art1_1 .blockRight p {
+  font-size: 18px;
+  font-style: normal;
+  font-family: sans-serif;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.art1_1 .blockRight button {
+  width: 220px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 55px;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  border-width: 0px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.art1_1 .blockRight button:hover {
+  -webkit-transform: translate(0px, 6px);
+          transform: translate(0px, 6px);
+  background-color: white;
+  color: blue;
+  border: 3px solid blue;
 }

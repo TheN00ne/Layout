@@ -1,0 +1,70 @@
+@import "./mixins.scss"; 
+
+body{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    header{
+        color:white;
+        .top{   
+            padding:15px;
+            img{
+                cursor:pointer;
+            }
+            .menu{
+                @include button(100px, 40px, 25px, 5px, white, black);
+                line-height:27px;
+                float:right;
+                font-size:25px;
+                font-weight:bold;
+                border:2px solid black;
+            }
+        }
+        .space{
+            min-height:650px;
+            height:auto;
+            text-align:center;
+            padding-bottom:20px;
+            background-image:url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/533bb9280d125b309a000741/cvb.jpg?version=");
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+
+            h1{
+                padding-left:20vw;
+                padding-right:20vw;
+            }
+
+            button{
+              @include button(220px, 60px, 25px, 20px, white, #312e45);
+              font-size:30px;
+            }
+        }
+        .mainLogo{
+            margin-top:60px;
+        }
+
+        .mainHeader{
+            @include h(70px, Georgia, white);
+        }
+
+        .enter{
+            @include p(20px, italic, sans-serif, 170px, 170px, 30px);
+        }
+
+
+        .themes{
+            margin-left:-40px;
+            li{
+                display:inline-block;
+                width:25px;
+                background-color:black;
+                border:1px solid white;
+                border-radius:10px;
+            }
+            a{
+                text-decoration:none;
+                color:violet;
+            }
+        }
+    }
+}

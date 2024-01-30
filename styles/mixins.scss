@@ -1,0 +1,34 @@
+@mixin button($w:200px, $h:#{$w/1.5}, $fs:25px, $mt, $bBgCol:white, $bCol:#292241){
+    width:$w;
+    height:$h;
+    background-color:$bBgCol;
+    border-radius:#{$w/4};
+    color:$bCol;
+    font-size:$fs;
+    margin-top:$mt;
+    border-width:0px;
+    cursor:pointer;
+    transition-duration:0.5s;
+    &:hover{
+        transform:translate(0px, 6px);
+        background-color:$bCol;
+        color:$bBgCol;
+        border:3px solid $bBgCol;
+    }
+}
+
+@mixin h($fs, $ff, $col){
+    font-size:$fs;
+    font-family:$ff;
+    color:$col;
+}
+
+@mixin p($fs, $fstl, $ff, $pl, $pr, $lh){
+    font-size:$fs;
+    font-style:$fstl;
+    font-family:$ff;
+    padding-left:$pl;
+    padding-right:$pr;
+    line-height:$lh;
+    word-wrap:break-word;
+}
