@@ -1,5 +1,4 @@
 @import "./mixins.scss";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
 
 @mixin circle($bgCol, $w, $bw, $bdCol, $zI, $top, $left){
     background-color:$bgCol;
@@ -11,6 +10,15 @@
     position:relative;
     top:$top;
     left:$left;
+}
+
+@mixin input($w, $h, $c, $bc){
+    width:$w;
+    height:$h;
+    color:$c;
+    background-color:$bc;
+    border-width:0;
+    border-radius:$w;
 }
 
 article{
@@ -52,24 +60,125 @@ article{
             font-family:sans-serif;
         }
         h1{
-            @include h(50px, Raleway, black);
+            @include h(50px, black);
             margin-top:10px;
+            padding-right:200px;
         }
         p{
-            @include p(18px, normal, sans-serif, 0px, 0px, 30px);
+            @include p(18px, 0px, 0px, 30px, black);
+            padding-right:200px;
         }
         button{
             @include button(220px, 60px, 20px, 20px, blue, white);
             text-transform:uppercase;
             font-weight:bold;
         }
-
     }
 }
 
 
-.sec2{
+.art1_2{
+    h1{
+        @include h(40px, blue);
+        text-align:center;
+    }
+
+    .teamBlock{
+        display:grid;
+        height:auto;
+        grid-template-columns:auto auto;
+        margin:50px;
+    }
+
+    .fstPerson, .secPerson{
+        display:grid;
+        grid-template-columns:40% 60%;
+        padding:10px;
+
+        img{
+            width:80%;
+            border-radius:100%;
+        }
+
+        .info{
+            margin:10px;
+        }
+
+        ul{
+            position:relative;
+            left:-20px;
+            li{
+                display:inline-block;
+                font-size:20px;
+                color:silver;
+            }
+        }
+
+        b{
+            @include h(25px, blue);
+        }
+
+        p{  
+            @include p(18px, 5px, 0px, 30px, gray);
+            width:280px;
+        }
+        
+        a{
+            margin:10px;
+        }
+
+        .socmed{
+            width:30px;
+            height:30px;
+            border-radius:100%;
+        }
+    }
+}
+
+.art2_1{
+    background-color:blue;
+    display:grid;
+    justify-items:center;
+
+    img{
+        margin-top:100px;
+        width:200px;
+        height:200px;
+        border:18px solid white;
+        border-radius:100%;
+    }
+
+    h1{
+        @include h(50px, white);
+        text-align:center;
+        padding-left:10%;
+        padding-right:10%;
+        margin-bottom:0px;
+    }
+
+    p{
+        @include p(18px, 50px, 50px, 30px, white);
+        text-align:center;
+        padding-left:20%;
+        padding-right:20%;
+    }
+
+    form{
+        text-align:center;
+    }
+
+    input{
+        @include input(50vw, 40px, gray, white);
+        font-family:Raleway;
+        font-size:18px;
+        margin:10px;
+        padding-left:20px;
+    }
     
+    button{
+        @include button(20vw, 40px, 25px, 0, #db55db, white);
+        margin-bottom:20px;
+    }
 }
 
 .sec3{

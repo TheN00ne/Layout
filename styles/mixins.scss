@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,900;1,600&display=swap');
+
 @mixin button($w:200px, $h:#{$w/1.5}, $fs:25px, $mt, $bBgCol:white, $bCol:#292241){
     width:$w;
     height:$h;
@@ -5,6 +7,7 @@
     border-radius:#{$w/4};
     color:$bCol;
     font-size:$fs;
+    font-family:Raleway;
     margin-top:$mt;
     border-width:0px;
     cursor:pointer;
@@ -17,18 +20,18 @@
     }
 }
 
-@mixin h($fs, $ff, $col){
+@mixin h($fs, $col){
     font-size:$fs;
-    font-family:$ff;
+    font-family:Raleway;
     color:$col;
 }
 
-@mixin p($fs, $fstl, $ff, $pl, $pr, $lh){
+@mixin p($fs, $pl, $pr, $lh, $col){
     font-size:$fs;
-    font-style:$fstl;
-    font-family:$ff;
+    font-family:Raleway;
     padding-left:$pl;
     padding-right:$pr;
     line-height:$lh;
+    color:$col;
     word-wrap:break-word;
 }
