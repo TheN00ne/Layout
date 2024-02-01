@@ -66,12 +66,9 @@ article{
         }
         p{
             @include p(18px, 0px, 0px, 30px, black);
-            padding-right:200px;
         }
         button{
             @include button(220px, 60px, 20px, 20px, blue, white);
-            text-transform:uppercase;
-            font-weight:bold;
         }
     }
 }
@@ -168,7 +165,7 @@ article{
     }
 
     input{
-        @include input(50vw, 40px, gray, white);
+        @include input(30vw, 40px, gray, white);
         font-family:Raleway;
         font-size:18px;
         margin:10px;
@@ -181,22 +178,113 @@ article{
     }
 }
 
-.sec3{
+.art3_1{
+    background-color:#ebeaea;
+    padding:10vw;
+
+    h1{
+        @include h(50px, black)
+    }
+
+    .aboutBlock{
+        background-color:white;
+        padding:2vw;
+    }
+
+    .firstBlock, .secondBlock, .thirdBlock{
+        padding:10px;
+    }
+
+    b{
+        font-size:25px;
+    }
     
+    summary::marker{
+        content:none;
+    }
+
+    .secBlock{
+        margin:10px;
+        width:5vw;
+        height:fill;
+        padding:10px;
+        color:black;
+        background-color:transparent;
+        border:2px solid gray;
+        font-weight:bold;
+        font-size:1.2vw;
+        text-align:center;
+        cursor:pointer;
+        &:hover{
+            background-color:blue;
+            color:white;
+        }
+    }
+
+    span{
+        display:block;
+        color:blue;
+        font-size:20px;
+        font-family:Raleway;
+        font-weight:bold;
+        margin-top:40px;
+    }
+
+    p{
+        @include p(20px, 0px, 0px, 30px, black);
+    }
+
+    button{
+        @include button(20vw, 3vw, 1vw, 10px, blue, white);
+    }
 }
 
-.sec4{
-    
-}
+.art4_1{
+    background-color:blue;
+    padding-bottom:10%;
 
-.sec5{
-    
-}
+    h1{
+        @include h(50px, white);
+        text-align:center;
+    }
 
-.sec6{
-    
-}
+    p{
+        @include p(20px, 30vw, 30vw, 30px, white);
+        text-align:center;
+    }
 
-.sec7{
+    .comments{
+        display:grid;
+        grid-template-columns:50% 50%;
+        justify-items:center;
+    }
 
+    .com{
+        text-align:center;
+        background-color:white;
+        width:30vw;
+        padding-bottom:8%;
+        padding-top:8%;
+
+        img{
+            width:8vw;
+            border-radius:100%;
+        }
+
+        .phrase{
+            display:block;
+            @include p(16px, 2vw, 2vw, 18px, black);
+            padding:50px;
+        }
+
+        b{
+            font-size:25px;
+        }
+
+        .job{
+            display:block;
+            color:gray;
+            padding-top:5%;
+        }
+    }
 }

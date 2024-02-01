@@ -30,8 +30,7 @@ body{
             background-size:cover;
 
             button{
-              @include button(220px, 60px, 25px, 20px, white, #312e45);
-              font-size:30px;
+              @include button(220px, 60px, 30px, 20px, white, #312e45);
             }
         }
         .mainLogo{
@@ -46,7 +45,7 @@ body{
         }
 
         p{
-            @include p(20px, 170px, 170px, 30px, white);
+            @include p(20px, 10vw, 10vw, 30px, white);
             font-style:italic;
         }
 

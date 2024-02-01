@@ -20,6 +20,8 @@ body header .top .menu {
   border-radius: 25px;
   color: black;
   font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
   font-family: Raleway;
   margin-top: 5px;
   border-width: 0px;
@@ -55,14 +57,15 @@ body header .space button {
   background-color: white;
   border-radius: 55px;
   color: #312e45;
-  font-size: 25px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
   font-family: Raleway;
   margin-top: 20px;
   border-width: 0px;
   cursor: pointer;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  font-size: 30px;
 }
 body header .space button:hover {
   -webkit-transform: translate(0px, 6px);
@@ -85,8 +88,8 @@ body header h1 {
 body header p {
   font-size: 20px;
   font-family: Raleway;
-  padding-left: 170px;
-  padding-right: 170px;
+  padding-left: 10vw;
+  padding-right: 10vw;
   line-height: 30px;
   color: white;
   word-wrap: break-word;
@@ -194,7 +197,6 @@ article {
   line-height: 30px;
   color: black;
   word-wrap: break-word;
-  padding-right: 200px;
 }
 .art1_1 .blockRight button {
   width: 220px;
@@ -203,14 +205,14 @@ article {
   border-radius: 55px;
   color: white;
   font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
   font-family: Raleway;
   margin-top: 20px;
   border-width: 0px;
   cursor: pointer;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 .art1_1 .blockRight button:hover {
   -webkit-transform: translate(0px, 6px);
@@ -319,12 +321,12 @@ article {
   text-align: center;
 }
 .art2_1 input {
-  width: 50vw;
+  width: 30vw;
   height: 40px;
   color: gray;
   background-color: white;
   border-width: 0;
-  border-radius: 50vw;
+  border-radius: 30vw;
   font-family: Raleway;
   font-size: 18px;
   margin: 10px;
@@ -337,6 +339,8 @@ article {
   border-radius: 5vw;
   color: white;
   font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
   font-family: Raleway;
   margin-top: 0;
   border-width: 0px;
@@ -351,4 +355,144 @@ article {
   background-color: white;
   color: #db55db;
   border: 3px solid #db55db;
+}
+
+.art3_1 {
+  background-color: #ebeaea;
+  padding: 10vw;
+}
+.art3_1 h1 {
+  font-size: 50px;
+  font-family: Raleway;
+  color: black;
+}
+.art3_1 .aboutBlock {
+  background-color: white;
+  padding: 2vw;
+}
+.art3_1 .firstBlock, .art3_1 .secondBlock, .art3_1 .thirdBlock {
+  padding: 10px;
+}
+.art3_1 b {
+  font-size: 25px;
+}
+.art3_1 summary::marker {
+  content: none;
+}
+.art3_1 .secBlock {
+  margin: 10px;
+  width: 5vw;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill;
+  padding: 10px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid gray;
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-align: center;
+  cursor: pointer;
+}
+.art3_1 .secBlock:hover {
+  background-color: blue;
+  color: white;
+}
+.art3_1 span {
+  display: block;
+  color: blue;
+  font-size: 20px;
+  font-family: Raleway;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.art3_1 p {
+  font-size: 20px;
+  font-family: Raleway;
+  padding-left: 0px;
+  padding-right: 0px;
+  line-height: 30px;
+  color: black;
+  word-wrap: break-word;
+}
+.art3_1 button {
+  width: 20vw;
+  height: 3vw;
+  background-color: blue;
+  border-radius: 5vw;
+  color: white;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Raleway;
+  margin-top: 10px;
+  border-width: 0px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.art3_1 button:hover {
+  -webkit-transform: translate(0px, 6px);
+          transform: translate(0px, 6px);
+  background-color: white;
+  color: blue;
+  border: 3px solid blue;
+}
+
+.art4_1 {
+  background-color: blue;
+  padding-bottom: 10%;
+}
+.art4_1 h1 {
+  font-size: 50px;
+  font-family: Raleway;
+  color: white;
+  text-align: center;
+}
+.art4_1 p {
+  font-size: 20px;
+  font-family: Raleway;
+  padding-left: 30vw;
+  padding-right: 30vw;
+  line-height: 30px;
+  color: white;
+  word-wrap: break-word;
+  text-align: center;
+}
+.art4_1 .comments {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+}
+.art4_1 .com {
+  text-align: center;
+  background-color: white;
+  width: 30vw;
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
+.art4_1 .com img {
+  width: 8vw;
+  border-radius: 100%;
+}
+.art4_1 .com .phrase {
+  display: block;
+  font-size: 16px;
+  font-family: Raleway;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  line-height: 18px;
+  color: black;
+  word-wrap: break-word;
+  padding: 50px;
+}
+.art4_1 .com b {
+  font-size: 25px;
+}
+.art4_1 .com .job {
+  display: block;
+  color: gray;
+  padding-top: 5%;
 }
