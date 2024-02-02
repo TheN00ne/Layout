@@ -178,9 +178,10 @@ article {
   margin-top: 80px;
   padding: 60px;
 }
-.art1_1 .blockRight span {
+.art1_1 .blockRight .title1 {
   font-size: 25px;
   font-family: sans-serif;
+  text-transform: uppercase;
 }
 .art1_1 .blockRight h1 {
   font-size: 50px;
@@ -495,4 +496,122 @@ article {
   display: block;
   color: gray;
   padding-top: 5%;
+}
+
+.art5_1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+  grid-template-columns: 45% 55%;
+  background-color: #f3f5f4;
+}
+.art5_1 img {
+  width: 100%;
+}
+.art5_1 .info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 3vw;
+}
+.art5_1 .title2 {
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.art5_1 h1 {
+  font-size: 3vw;
+  font-family: Raleway;
+  color: black;
+  padding-right: 30vw;
+}
+.art5_1 p {
+  font-size: 1.5vw;
+  font-family: Raleway;
+  padding-left: 0;
+  padding-right: 15vw;
+  line-height: 2em;
+  color: black;
+  word-wrap: break-word;
+}
+.art5_1 button {
+  width: 16vw;
+  height: 4vw;
+  background-color: blue;
+  border-radius: 4vw;
+  color: white;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Raleway;
+  margin-top: 2vh;
+  border-width: 0px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.art5_1 button:hover {
+  -webkit-transform: translate(0px, 6px);
+          transform: translate(0px, 6px);
+  background-color: white;
+  color: blue;
+  border: 3px solid blue;
+}
+
+.art6_1 h1 {
+  font-size: 3vw;
+  font-family: Raleway;
+  color: black;
+  text-align: center;
+}
+.art6_1 > p {
+  font-size: 1.3vw;
+  font-family: Raleway;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  line-height: 2em;
+  color: black;
+  word-wrap: break-word;
+  text-align: center;
+}
+.art6_1 .statistic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5vh;
+}
+.art6_1 .statBlock {
+  width: 17vw;
+  height: auto;
+  background-color: #f2f2f2;
+  border-top: 2vh solid blue;
+  padding-bottom: 10%;
+}
+.art6_1 .statBlock .count {
+  display: block;
+  font-size: 5vw;
+  text-align: center;
+}
+.art6_1 .statBlock .title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 1.5vw;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.art6_1 .statBlock .desc {
+  font-size: 1.2vw;
+  font-family: Raleway;
+  padding-left: 16%;
+  padding-right: 16%;
+  line-height: 1.7em;
+  color: black;
+  word-wrap: break-word;
+  text-align: center;
 }

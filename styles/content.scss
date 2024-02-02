@@ -55,18 +55,23 @@ article{
     .blockRight{
         margin-top:80px;
         padding:60px;
-        span{
+
+        .title1{
             font-size:25px;
             font-family:sans-serif;
+            text-transform:uppercase;
         }
+
         h1{
             @include h(50px, black);
             margin-top:10px;
             padding-right:200px;
         }
+
         p{
             @include p(18px, 0px, 0px, 30px, black);
         }
+
         button{
             @include button(220px, 60px, 20px, 20px, blue, white);
         }
@@ -287,4 +292,90 @@ article{
             padding-top:5%;
         }
     }
+}
+
+.art5_1{
+    display:grid;
+    grid-template-columns:45% 55%;
+    background-color:#f3f5f4;
+
+    img{
+        width:100%;
+    }
+
+    .info{
+        align-self:center;
+        padding-left:3vw;
+    }
+
+    .title2{
+        font-size:25px;
+        font-family:sans-serif;
+        text-transform:uppercase;
+    }
+
+    h1{
+        @include h(3vw, black);
+        padding-right:30vw;
+    }
+
+    p{
+        @include p(1.5vw, 0, 15vw, 2em, black);
+    }
+
+    button{
+        @include button(16vw, 4vw, 1.2vw, 2vh, blue, white);
+    }
+}
+
+.art6_1{
+
+    h1{
+        @include h(3vw, black);
+        text-align:center;
+    }
+
+    > p{
+        @include p(1.3vw, 20vw, 20vw, 2em, black);
+        text-align:center;
+    }
+
+    .statistic{
+        display:grid;
+        grid-template-columns:auto auto auto auto;
+        justify-items:center;
+        padding-left:10vw;
+        padding-right:10vw;
+        padding-top:5vh;
+    }
+
+    .statBlock{
+        width:17vw;
+        height:auto;
+        background-color:#f2f2f2;
+        border-top:2vh solid blue;
+        padding-bottom:10%;
+
+        .count{
+            display:block;
+            font-size:5vw;
+            text-align:center;
+        }
+
+        .title{
+            display:block;
+            text-align:center;
+            text-transform:uppercase;
+            font-family:Raleway;
+            font-size:1.5vw;
+            padding-left:20%;
+            padding-right:20%;
+        }
+
+        .desc{
+            @include p(1.2vw, 16%, 16%, 1.7em, black);
+            text-align:center;
+        }
+    }
+
 }
