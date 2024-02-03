@@ -166,20 +166,21 @@ article{
     }
 
     form{
+        display:grid;
+        grid-template-columns:auto auto auto;
         text-align:center;
+        margin-bottom:5vh;
+        gap:1vw;
     }
 
     input{
-        @include input(30vw, 40px, gray, white);
+        @include input(20vw, 3vw, gray, white);
         font-family:Raleway;
-        font-size:18px;
-        margin:10px;
-        padding-left:20px;
+        font-size:1.3vw;
     }
     
     button{
-        @include button(20vw, 40px, 25px, 0, #db55db, white);
-        margin-bottom:20px;
+        @include button(10vw, 3vw, 1.5vw, 0, #db55db, white);
     }
 }
 
@@ -378,4 +379,108 @@ article{
         }
     }
 
+}
+
+.art7_1{
+    display:grid;
+    grid-template-columns:auto auto;
+    justify-content:center;
+    margin-top:15vh;
+    margin-bottom:10vh;
+    gap:5vw;
+    
+    .field{
+        width:35vw;
+        height:90%;
+
+        h1{
+            @include h(3vw, black);
+            text-align:center;
+        }
+    
+        .o{
+            border-bottom:2px solid black; 
+            font-family:Raleway;
+            margin:1.5vw;
+        }
+    
+        label{
+            font-size:1.1vw;    }
+    
+        .text{
+            display:block;
+            color:silver;
+            width:100%;
+            max-width:100%;
+            border-width:0;
+            font-size:1.1vw;
+            margin:1vw;
+        }
+    
+        .checkbox{
+            margin-left:1.3vw;
+        }
+    
+        a{
+            text-decoration:none;
+        }
+    
+        .all{
+            display:grid;
+            justify-items:center;
+        }
+    
+        button{
+            @include button(30vw, 6vh, 1.4vw, 3vh, blue, white);
+        }
+    }
+
+    .info{
+        width:25vw;
+        height:90%;
+        background-color:#edecec;
+        padding:2vw;
+
+        h2{
+            @include h(1.5vw, blue);
+            font-weight:600;
+            font-style:bold;
+            text-transform:uppercase;
+            text-align:center;
+            margin-top:8vh;
+        }
+
+        span{
+            display:block;
+            text-align:center;
+            font-size:1.2vw;
+            padding-left:7vw;
+            padding-right:7vw;
+        }
+
+        b{
+            font-size:1.3vw;
+            display:block;
+            text-align:center;
+        }
+    }
+}
+
+footer{
+    height:20vh;
+    background-color:#333333;
+    padding:3vw;
+
+    p{
+        @include p(1vw, 32vw, 32vw, 2vh, white);
+        text-align:center;
+    }
+
+    span{
+        color:white;
+        font-family:Raleway;
+        display:block;
+        text-align:center;
+        padding-top:10vh;
+    }
 }

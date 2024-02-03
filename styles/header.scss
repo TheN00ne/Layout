@@ -30,7 +30,7 @@ body{
             background-size:cover;
 
             button{
-              @include button(220px, 60px, 30px, 20px, white, #312e45);
+              @include button(15vw, 8vh, 30px, 20px, white, #312e45);
             }
         }
         .mainLogo{
@@ -40,12 +40,12 @@ body{
         h1{
             @include h(70px, white);
             font-family:Georgia;
-            padding-left:10vw;
-            padding-right:10vw;
+            padding-left:20vw;
+            padding-right:20vw;
         }
 
         p{
-            @include p(20px, 10vw, 10vw, 30px, white);
+            @include p(20px, 25vw, 25vw, 30px, white);
             font-style:italic;
         }
 
@@ -54,14 +54,22 @@ body{
             margin-left:-40px;
             li{
                 display:inline-block;
-                width:25px;
+                width:3vw;
                 background-color:black;
                 border:1px solid white;
                 border-radius:10px;
+                transition-duration:0.5s;
+                &:hover{
+                    transform:translate(0px, 0.5vh);
+                    border:1px solid blue;
+                    & a{
+                        color:blue;
+                    }
+                }
             }
             a{
                 text-decoration:none;
-                color:violet;
+                color:white;
             }
         }
     }
