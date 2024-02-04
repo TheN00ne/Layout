@@ -1,36 +1,39 @@
+$mainCol1:blue;
+$mainCol2:white;
+$textCol3:black;
+
+
 @import "./mixins.scss"; 
 
 body{
     margin:0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     header{
-        color:white;
         .top{   
-            padding:15px;
+            padding:20px;
             img{
                 cursor:pointer;
             }
             .menu{
-                @include button(100px, 40px, 25px, 5px, white, black);
-                line-height:27px;
+                @include button(30px, 0, $mainCol1, $textCol3);
+                line-height:30px;
                 float:right;
-                font-size:25px;
                 font-weight:bold;
-                border:2px solid black;
+                border:2px solid $textCol3;
             }
         }
         .space{
             min-height:650px;
             height:auto;
             text-align:center;
-            padding-bottom:20px;
+            padding-bottom:3vh;
             background-image:url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/533bb9280d125b309a000741/cvb.jpg?version=");
             background-repeat:no-repeat;
             background-position:center;
             background-size:cover;
 
             button{
-              @include button(15vw, 8vh, 30px, 20px, white, #312e45);
+              @include button(30px, 20px, $mainCol2, #312e45);
             }
         }
         .mainLogo{
@@ -38,14 +41,14 @@ body{
         }
 
         h1{
-            @include h(70px, white);
+            @include h(5vw, $mainCol2);
             font-family:Georgia;
             padding-left:20vw;
             padding-right:20vw;
         }
 
         p{
-            @include p(20px, 25vw, 25vw, 30px, white);
+            @include p(1.2vw, 25vw, 25vw, 30px, $mainCol2);
             font-style:italic;
         }
 
@@ -54,22 +57,23 @@ body{
             margin-left:-40px;
             li{
                 display:inline-block;
-                width:3vw;
-                background-color:black;
-                border:1px solid white;
+                width:45px;
+                font-size:20px;
+                background-color:$textCol3;
+                border:1px solid $mainCol2;
                 border-radius:10px;
                 transition-duration:0.5s;
                 &:hover{
                     transform:translate(0px, 0.5vh);
-                    border:1px solid blue;
+                    border:1px solid $mainCol2;
                     & a{
-                        color:blue;
+                        color:$mainCol2;
                     }
                 }
             }
             a{
                 text-decoration:none;
-                color:white;
+                color:$mainCol2;
             }
         }
     }
